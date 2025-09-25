@@ -9,6 +9,7 @@ spring:
           uri: https://github.com/MOliveiraDev/Config-Server
           clone-on-start: true
           search-paths: config
+        prefix: /config
 eureka:
   client:
     register-with-eureka: false
