@@ -1,2 +1,19 @@
 server:
   port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MOliveiraDev/Config-Server
+          clone-on-start: true
+          search-paths: config
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false
