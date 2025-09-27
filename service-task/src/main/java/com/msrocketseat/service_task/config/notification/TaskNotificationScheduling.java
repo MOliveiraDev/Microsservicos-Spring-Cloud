@@ -12,7 +12,7 @@ public class TaskNotificationScheduling {
     private final TaskService service;
 
     @Scheduled(fixedRate = 360000 * 24)
-    public void checkAndNotifiyTask() {
+    public void checkAndNotifyTask() {
         service.sendNotificationForDueTask();
     }
 }
