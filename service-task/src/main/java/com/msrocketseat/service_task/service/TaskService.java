@@ -40,6 +40,7 @@ public class TaskService {
             );
             notificationClient.sendNotification(request);
             task.setNotified(true);
+            repository.save(task);
         }
     }
 
