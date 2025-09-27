@@ -32,4 +32,4 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
   instance:
     prefer-ip-address: false
-    hostname: Localhost
+    hostname: localhost
